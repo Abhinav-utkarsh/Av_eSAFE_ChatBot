@@ -1,0 +1,64 @@
+body {
+    background-color: #000;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .text-green {
+    color: #00ff00;
+  }
+  
+  .btn-green {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+  }
+  
+  .btn-green:hover {
+    background-color: #00cc00;
+  }
+  
+  .face-container {
+    position: relative;
+    width: 190px;
+    height: 275px;
+    margin: 20px auto;
+    border: 3px solid #00ff00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate-face 4s infinite linear;
+  }
+  
+  .face {
+    width: 250px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0,255,0,0.5), rgba(0,0,0,0.8));
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  @keyframes rotate-face {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.8);
+    }
+  }
+  
+  .chat-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
